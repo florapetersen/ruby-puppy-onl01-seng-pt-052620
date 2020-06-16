@@ -5,12 +5,12 @@ class Dog
 
   def initialize(name)
     @name = name
-    binding.pry
-    @@all << self
+    self.save
   end
 
-  def save
+  def self.save
     @@all << self
+  end
 
   def self.all
     @@all
