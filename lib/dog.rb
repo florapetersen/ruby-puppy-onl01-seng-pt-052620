@@ -1,4 +1,3 @@
-require 'pry'
 class Dog
   attr_accessor :name
   @@all = []
@@ -8,7 +7,7 @@ class Dog
     save
   end
 
-  def self.save
+  def save
     @@all << self
   end
 
